@@ -3,5 +3,5 @@
 # Please call this from the repository's root directory.
 
 for dir in images; do
-	docker pull $(shell awk '/^FROM/ { print $$2; exit }' "$dir/Dockerfile")
+	docker pull $(awk '/^FROM/ { print $$2; exit }' "$dir/Dockerfile")
 done
