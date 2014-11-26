@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+package="$1"
+output="$2"
+reporter="subunit"
+
+trial --reporter=subunit "$package" | subunit-1to2 | subunit2junitxml > "$output"

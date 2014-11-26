@@ -1,0 +1,5 @@
+[Jenkins-IV]
+name=Jenkins-IV
+baseurl=http://repository.apiest.com/el6
+gpgcheck=0
+enabled=1
